@@ -49,31 +49,33 @@ function Header() {
           </li>
         </ul>
       </div>
-      <div className='flex md:hidden p-4'>
+      <nav className='flex md:hidden relative items-center justify-between px-2 pt-4'>
         <p>OKIKIJESU</p>
-        {mobileNav ? (
-          <span onClick={handletoggle}>
-            <XMarkIcon />
-          </span>
-        ) : (
-          <span onClick={handletoggle}>
-            <Bars3BottomRightIcon />
-          </span>
-        )}
-        {mobileNav && (
-          <ul>
-            <li>
-              <a href='/'>Home</a>
-            </li>
-            <li>
-              <a href='#about'>About</a>
-            </li>
-            <li>
-              <a href='#project'>Project</a>
-            </li>
-          </ul>
-        )}
-      </div>
+        <div>
+          {mobileNav ? (
+            <span onClick={handletoggle}>
+              <XMarkIcon className='w-8' />
+            </span>
+          ) : (
+            <span onClick={handletoggle}>
+              <Bars3BottomRightIcon className='w-8' />
+            </span>
+          )}
+          {mobileNav && (
+            <ul className='absolute top-20 left-0 right-0 p-4 flex flex-col gap-3 w-full bg-[#242424] z-10'>
+              <li>
+                <a href='/'>Home</a>
+              </li>
+              <li>
+                <a href='/about'>About</a>
+              </li>
+              <li>
+                <a href='/project'>Project</a>
+              </li>
+            </ul>
+          )}
+        </div>
+      </nav>
     </>
   );
 }
