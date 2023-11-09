@@ -4,6 +4,10 @@ import HeaderImage from "../assets/header.png";
 import x from "../assets/x.svg";
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
+import react from "../assets/react.svg";
+import express from "../assets/express.png";
+import native from "../assets/react-native.png";
+import tch from "../assets/tch.png";
 
 const socials = [
   {
@@ -20,6 +24,36 @@ const socials = [
     logo: linkedin,
     name: "Linkedin",
     link: "https://www.linkedin.com/in/okikijesu/",
+  },
+];
+const Projects = [
+  {
+    img: tch,
+    name: "Blog Site",
+  },
+  {
+    img: tch,
+    name: "Blog Site",
+  },
+  {
+    img: tch,
+    name: "Blog Site",
+  },
+  {
+    img: tch,
+    name: "Blog Site",
+  },
+  {
+    img: tch,
+    name: "Blog Site",
+  },
+  {
+    img: tch,
+    name: "Blog Site",
+  },
+  {
+    img: tch,
+    name: "Blog Site",
   },
 ];
 
@@ -49,44 +83,56 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
-          <h4>Projects</h4>
+        <div className='mb-4'>
+          <h4 className='text-xl md:text-3xl text-center mb-4'>My Expertise</h4>
+          <div className='flex justify-center border border-slate-300 rounded'>
+            <div className='w-1/3 px-4 py-3'>
+              <div className='flex mb-4'>
+                <img src={react} alt='' />
+                <h4>Front-end Development</h4>
+              </div>
+              <p>
+                Passionate about UI/UX. Over 4 years of development experience
+                in HTML, CSS, JS, React and NextJS frameworks
+              </p>
+            </div>
+            <div className='w-1/3 border-l border-slate-300 border-r px-4 py-3'>
+              <div className='flex mb-4'>
+                <img src={express} alt='' className='w-[75px]' />
+                <h4>Backend Development</h4>
+              </div>
+              <p>
+                Experienced in both functional and OOP: JavaScript, TypeScript.
+                Work With Express and Django frameworks for serverside
+                development
+              </p>
+            </div>
+            <div className='px-4 py-3 w-1/3'>
+              <div className='flex mb-4'>
+                <img src={native} alt='' className='w-[75px]' />
+                <h4>Mobile App Development</h4>
+              </div>
+              <p>
+                Skilled in developing hybrid mobile apps and cross-platform
+                solutions using the Flutter framework.
+              </p>
+            </div>
+          </div>
         </div>
         <div>
-          <h4>About</h4>
-          <p>
-            GM, I'm Max. I enjoy building dynamic, creative products from start
-            to finish. Focused on developing intuitive experiences that
-            constantly grow and improve based on user metrics. Always shipping.
-          </p>
-        </div>
-        <div>
-          <h4>Work Experience</h4>
-
-          <table>
-            <tr>
-              <td>2022-2023</td>
-              <td>Freelance</td>
-            </tr>
-            <tr>
-              <td>2023-present</td>
-              <td>Fullstack Engineer</td>
-            </tr>
-          </table>
-        </div>
-        <div>
-          <h4>Side projects</h4>
-
-          <table>
-            <tr>
-              <td>ongoing</td>
-              <td>Agro-net</td>
-            </tr>
-            <tr>
-              <td>2022</td>
-              <td>Recounter</td>
-            </tr>
-          </table>
+          <h4 className='text-xl md:text-3xl text-center mb-4'>Projects</h4>
+          <div className='flex overflow-x-auto max-w-full'>
+            {Projects.map((project, index) => (
+              <div
+                key={index}
+                className='flex-shrink-0 flex flex-col items-center mx-4'
+              >
+                <a href=''>
+                  <img src={project.img} alt='' className='w-48 h-36' />
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
         <Footer />
       </div>

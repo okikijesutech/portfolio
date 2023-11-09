@@ -14,13 +14,38 @@ function Header() {
         <p>OKIKIJESU</p>
         <ul className='flex gap-4'>
           <li>
-            <a href='/'>Home</a>
+            <a
+              href='/'
+              className={
+                location.pathname === "/" ? "pb-2 border-b border-white" : ""
+              }
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href='/about'>About</a>
+            <a
+              href='/about'
+              className={
+                location.pathname === "/about"
+                  ? "pb-2 border-b border-white"
+                  : ""
+              }
+            >
+              About
+            </a>
           </li>
           <li>
-            <a href='/project'>Project</a>
+            <a
+              href='/project'
+              className={
+                location.pathname === "/project"
+                  ? "pb-2 border-b border-white"
+                  : ""
+              }
+            >
+              Project
+            </a>
           </li>
         </ul>
       </div>
