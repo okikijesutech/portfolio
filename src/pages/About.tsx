@@ -7,7 +7,7 @@ function About() {
   return (
     <>
       <Header />
-      <div className='max-w-5xl mx-auto'>
+      <div className='max-w-5xl mx-auto p-4'>
         <div className='mb-6'>
           <h2 className='text-xl md:text-3xl mb-4'>About Me</h2>
           <p className='w-3/4'>
@@ -53,17 +53,17 @@ function About() {
             </div>
           </div>
         </div>
-        <div className='flex justify-between w-1/2'>
+        <div className='flex flex-col md:flex-row gap-6 justify-between w-1/2'>
           <div>
             <h4 className='text-xl md:text-3xl mb-2'>Skills</h4>
-            <ul className='list-disc'>
+            <ul className='text-lg'>
               <li>Web Programming</li>
               <li>Mobile App Development</li>
             </ul>
           </div>
           <div>
             <h4 className='text-xl md:text-3xl mb-2'>Interest</h4>
-            <ul className='list-disc'>
+            <ul className='text-lg'>
               <li>Movies</li>
               <li>Programming</li>
               <li>IOT</li>

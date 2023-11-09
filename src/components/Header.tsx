@@ -12,7 +12,7 @@ function Header() {
     <>
       <div className='p-4 hidden md:flex justify-around'>
         <p>OKIKIJESU</p>
-        <ul className='flex gap-4'>
+        <ul className='flex gap-6'>
           <li>
             <a
               href='/'
@@ -49,7 +49,7 @@ function Header() {
           </li>
         </ul>
       </div>
-      <div className='flex md:hidden'>
+      <div className='flex md:hidden p-4'>
         <p>OKIKIJESU</p>
         {mobileNav ? (
           <span onClick={handletoggle}>

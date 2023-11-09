@@ -6,7 +6,7 @@ export function Bars3BottomRightIcon(props: SVGAttributes<SVGElement>) {
       {...props}
       aria-hidden='true'
       fill='none'
-      stroke='#000000'
+      stroke='#fff'
       strokeWidth='1.5'
       viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
@@ -26,7 +26,7 @@ export function XMarkIcon(props: SVGAttributes<SVGElement>) {
       {...props}
       aria-hidden='true'
       fill='none'
-      stroke='#000000'
+      stroke='#fff'
       strokeWidth='1.5'
       viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
