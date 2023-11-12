@@ -5,7 +5,7 @@ import freelance from "../assets/30324.jpg";
 
 function About() {
   return (
-    <>
+    <div className='dark:bg-slate-100 text-white dark:text-black'>
       <Header />
       <div className='max-w-5xl mx-auto p-4'>
         <div className='mb-6'>
@@ -72,7 +72,7 @@ function About() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
