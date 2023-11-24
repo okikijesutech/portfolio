@@ -23,7 +23,8 @@ const socials = [
 function Footer() {
   return (
     <div className='flex flex-col gap-4 mt-4 mb-8 items-center justify-center'>
-      <div className='flex gap-4'>
+      <h3>OKIKIJESU</h3>
+      <div className='flex gap-4 mt-4 '>
         {socials.map((social) => (
           <a
             href={social.link}
@@ -31,6 +32,7 @@ function Footer() {
             className='flex gap-2 rounded bg-slate-200 px-2 py-1 text-black'
           >
             <img src={social.logo} alt='' />
+            <h4>{social.name}</h4>
           </a>
         ))}
       </div>

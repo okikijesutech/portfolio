@@ -21,11 +21,8 @@ function ThemeSwitcher() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
-    <button
-      onClick={handleThemeSwitch}
-      className='px-3 py-2 bg-white dark:bg-black rounded'
-    >
-      {theme === "dark" ? <Moon /> : <Sun />}
+    <button onClick={handleThemeSwitch} className=''>
+      {theme === "dark" ? <Sun /> : <Moon />}
     </button>
   );
 }

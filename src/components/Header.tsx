@@ -11,15 +11,17 @@ function Header() {
 
   return (
     <>
-      <div className='p-4 hidden md:flex justify-around'>
+      <div className='max-w-7xl mx-auto p-4 bg-[#242424] hidden md:flex justify-between z-10'>
         <p>ÒkìkíJésù</p>
-        <ThemeSwitcher />
-        <ul className='flex gap-6'>
+
+        <ul className='flex gap-6 mr-60'>
           <li>
             <a
               href='/'
               className={
-                location.pathname === "/" ? "pb-2 border-b border-white" : ""
+                location.pathname === "/"
+                  ? "pb-2 border-b border-white dark:border-black"
+                  : ""
               }
             >
               Home
@@ -27,10 +29,10 @@ function Header() {
           </li>
           <li>
             <a
-              href='/about'
+              href='#about'
               className={
                 location.pathname === "/about"
-                  ? "pb-2 border-b border-white"
+                  ? "pb-2 border-b border-white dark:border-black"
                   : ""
               }
             >
@@ -39,19 +41,44 @@ function Header() {
           </li>
           <li>
             <a
-              href='/project'
+              href='#projects'
               className={
                 location.pathname === "/project"
-                  ? "pb-2 border-b border-white"
+                  ? "pb-2 border-b border-white dark:border-black"
                   : ""
               }
             >
               Project
             </a>
           </li>
+          <li>
+            <a
+              href='#expertise'
+              className={
+                location.pathname === "/project"
+                  ? "pb-2 border-b border-white dark:border-black"
+                  : ""
+              }
+            >
+              Expertise
+            </a>
+          </li>
+          <li>
+            <a
+              href='#contact'
+              className={
+                location.pathname === "/project"
+                  ? "pb-2 border-b border-white dark:border-black"
+                  : ""
+              }
+            >
+              Contact
+            </a>
+          </li>
         </ul>
+        <ThemeSwitcher />
       </div>
-      <nav className='flex md:hidden relative items-center justify-between px-2 pt-4'>
+      <nav className='flex md:hidden  relative items-center justify-between px-2 pt-4'>
         <p>ÒkìkíJésù</p>
         <div>
           {mobileNav ? (
