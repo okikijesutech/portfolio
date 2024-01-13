@@ -21,7 +21,7 @@ function ThemeSwitcher() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
-    <button onClick={handleThemeSwitch} className=''>
+    <button onClick={handleThemeSwitch}>
       {theme === "dark" ? <Sun /> : <Moon />}
     </button>
   );
