@@ -2,17 +2,20 @@ import { DiFirebase, DiReact } from "react-icons/di";
 
 const Technologies = () => {
   return (
-    <div id='expertise' className='px-6 mb-6'>
-      <div
-        className='bg-gradient-to-r from-gray-800 to-transparent h-2 -ml-4
-         w-16 mx-auto mb-2'
-      ></div>
-      <h4 className='text-2xl md:text-3xl text-left md:text-center mb-4 font-bold'>
-        Technologies
-      </h4>
+    <div
+      id='expertise'
+      className='flex flex-col justify-center items-center px-6 mb-[60px]'
+    >
+      <div className='flex flex-col mb-6'>
+        <div
+          className='bg-gradient-to-r from-[#F46737]  to-[#945DD6] h-1 ml-0
+         w-8 mx-auto mb-2'
+        ></div>
+        <h4 className='text-2xl md:text-3xl font-bold'>Technologies</h4>
+      </div>
 
-      <div className='max-w-4xl mx-auto'>
-        <p className='text-left lg:text-center text-gray-600'>
+      <div className='max-w-5xl mx-auto'>
+        <p className='text-left lg:text-center leading-[32px] text-gray-600'>
           I have worked with a range of technologies in the world of web
           development, from Back-end to Front-End Development.
         </p>

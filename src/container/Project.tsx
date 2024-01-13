@@ -4,16 +4,20 @@ const Project = () => {
   return (
     <div
       id='projects'
-      className='dark:bg-slate-100 text-white dark:text-black px-6 mb-6'
+      className='dark:bg-slate-100 text-white dark:text-black px-6 mb-[60px] flex flex-col justify-center items-center'
     >
-      <h4 className='text-2xl md:text-3xl text-left md:text-center mb-4 font-bold'>
-        Projects
-      </h4>
+      <div className='flex flex-col mb-6'>
+        <div
+          className='bg-gradient-to-r from-[#F46737]  to-[#945DD6] h-1 ml-0
+         w-8 mx-auto mb-2'
+        ></div>
+        <h4 className='text-2xl md:text-3xl font-bold'>Projects</h4>
+      </div>
       <div className='grid gap-6 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 md:gap-8 place-items-center'>
         {Projects.map((project) => (
           <div
             key={project.id}
-            className='bg-gray-800 w-[400px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 ease-in-out text-white'
+            className='bg-gray-800 w-[350px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 ease-in-out text-white'
           >
             <div className='relative'>
               <img

@@ -1,6 +1,5 @@
 import HeaderImage from "../assets/header.png";
 import { TypeAnimation } from "react-type-animation";
-import CV from "../assets/okikijesu_oluwasina_Resume.pdf";
 import { Linkedin, X, Github } from "../components/icons";
 
 const socials = [
@@ -63,14 +62,17 @@ const Header = () => {
           </div>
         </div>
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-start mt-6'>
-          <button className='w-full md:w-auto rounded bg-blue-400 hover:bg-blue-600 px-4 py-2 md:px-6 md:py-2 text-white mb-2 md:mb-0 md:mr-10 transition duration-300 ease-in-out'>
-            <a download={CV} href='CV'>
+          <button className='w-[300px] md:w-auto rounded bg-blue-400 hover:bg-blue-600 px-4 py-2 md:px-8 md:py-4 text-white mb-2 md:mb-0 md:mr-10 transition duration-300 ease-in-out'>
+            <a
+              download='okikijesu_oluwasina_Resume.pdf'
+              href='https://drive.google.com/file/d/1qbg49p_hCkYAWlAYUnN1XP4z5rsr1zs-/view?usp=drive_link'
+            >
               View CV
             </a>
           </button>
-          <button className='w-full md:w-auto rounded bg-green-400 hover:bg-green-600 px-4 py-2 md:px-6 md:py-2 text-white transition duration-300 ease-in-out'>
+          {/* <button className='w-full md:w-auto rounded bg-green-400 hover:bg-green-600 px-4 py-2 md:px-6 md:py-2 text-white transition duration-300 ease-in-out'>
             <a href='#contact'>Say Hello</a>
-          </button>
+          </button> */}
         </div>
       </div>
       <div className='flex-1 w-[400px] sm:mb-6 md:w-[800px] overflow-hidden rounded-md '>

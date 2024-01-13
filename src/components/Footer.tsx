@@ -22,7 +22,7 @@ const socials = [
 
 function Footer() {
   return (
-    <div className='flex flex-col gap-4 mt-4 mb-8 items-center justify-center'>
+    <div className='flex flex-col gap-4 pt-4 pb-8  items-center justify-center bg-gray-800'>
       <h3>OKIKIJESU</h3>
       <div className='flex gap-4 mt-4 '>
         {socials.map((social) => (

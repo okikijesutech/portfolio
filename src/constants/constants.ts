@@ -15,7 +15,7 @@ const Projects = [
   },
   {
     name: "Blog Site",
-    desc: "This is a react project",
+    desc: "This is a react project, alot of react technologies were used",
     img: tch,
     tag: ["Next.js", "Prisma", "Node.js", "TailWindCss"],
     source: "",
@@ -24,7 +24,7 @@ const Projects = [
   },
   {
     name: "Hoobank",
-    desc: "This is a react project",
+    desc: "This is a react project, alot of react technologies were used",
     img: hoo,
     tag: ["React", "Tailwindcss"],
     source: "https://github.com/okikijesutech/Hoobank",
@@ -33,7 +33,7 @@ const Projects = [
   },
   {
     name: "GPT-Parody",
-    desc: "This is a react project",
+    desc: "This is a react project, alot of react technologies were used",
     img: gpt,
     tag: ["React"],
     source: "https://github.com/okikijesutech/gpt",

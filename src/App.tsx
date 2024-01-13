@@ -1,7 +1,7 @@
 import { Navbar, Footer } from "./components";
 import {
   About,
-  Contact,
+  // Contact,
   Experience,
   Header,
   Project,
@@ -18,9 +18,9 @@ function App() {
         <Technologies />
         <Project />
         <Experience />
-        <Contact />
-        <Footer />
+        {/* <Contact /> */}
       </div>
+      <Footer />
     </div>
   );
 }
