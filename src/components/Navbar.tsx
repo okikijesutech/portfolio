@@ -31,7 +31,7 @@ function Header() {
 
   return (
     <>
-      <div className='max-w-7xl mx-auto p-6 bg-[#242424] hidden md:flex justify-between z-10'>
+      <div className='max-w-7xl mx-auto p-6 bg-[#242424] dark:bg-slate-100 dark:text-black hidden md:flex justify-between z-10'>
         <div className='flex justify-center items-start'>
           <p>ÒkìkíJésù</p>
         </div>
@@ -43,6 +43,7 @@ function Header() {
       </div>
       <nav className='flex md:hidden  relative items-center justify-between px-2 pt-4'>
         <p>ÒkìkíJésù</p>
+        <ThemeSwitcher />
         <div>
           {mobileNav ? (
             <span onClick={handletoggle}>

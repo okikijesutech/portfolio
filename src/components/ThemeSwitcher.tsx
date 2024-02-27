@@ -22,7 +22,7 @@ function ThemeSwitcher() {
   };
   return (
     <button onClick={handleThemeSwitch}>
-      {theme === "dark" ? <Sun /> : <Moon />}
+      {theme === "dark" ? <Moon /> : <Sun />}
     </button>
   );
 }

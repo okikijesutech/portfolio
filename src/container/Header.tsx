@@ -19,7 +19,7 @@ const socials = [
 
 const Header = () => {
   return (
-    <div className='dark:bg-slate-100 text-white dark:text-black flex flex-col-reverse md:flex-row justify-evenly items-center px-6 py-10 '>
+    <div className='dark:bg-slate-100 h-[90vh] text-white dark:text-black flex flex-col-reverse md:flex-row justify-evenly items-center px-6 pt-6 py-10 '>
       <div className='flex flex-row items-center justify-center md:flex-col mt-6'>
         {socials.map((social, index) => (
           <div
@@ -64,8 +64,9 @@ const Header = () => {
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-start mt-6'>
           <button className='w-[300px] md:w-auto rounded bg-blue-400 hover:bg-blue-600 px-4 py-2 md:px-8 md:py-4 text-white mb-2 md:mb-0 md:mr-10 transition duration-300 ease-in-out'>
             <a
-              download='okikijesu_oluwasina_Resume.pdf'
+              // download='okikijesu_oluwasina_Resume.pdf'
               href='https://drive.google.com/file/d/1qbg49p_hCkYAWlAYUnN1XP4z5rsr1zs-/view?usp=drive_link'
+              target='_blank'
             >
               View CV
             </a>

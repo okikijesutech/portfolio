@@ -1,6 +1,15 @@
+import { useState } from "react";
 import { Projects } from "../constants/constants";
 
 const Project = () => {
+  const [filter, setFilter] = useState("");
+  const handleFormat = (filter: any) => {
+    setFilter(filter);
+  };
+
+  const filteredProjects = filter
+    ? Projects.filter((project) => project.type.includes(filter))
+    : Projects;
   return (
     <div
       id='projects'
@@ -13,8 +22,28 @@ const Project = () => {
         ></div>
         <h4 className='text-2xl md:text-3xl font-bold'>Projects</h4>
       </div>
+      <div className='mb-4 flex'>
+        <button
+          className='mr-[10px] px-3 py-2 rounded-md bg-white text-black dark:bg-black dark:text-white'
+          onClick={() => handleFormat("frontend")}
+        >
+          Front-end projects
+        </button>
+        <button
+          className='mr-[10px] px-3 py-2 rounded-md bg-white text-black dark:bg-black dark:text-white'
+          onClick={() => handleFormat("mobile")}
+        >
+          Mobile projects
+        </button>
+        <button
+          className='mr-[10px] px-3 py-2 rounded-md bg-white text-black dark:bg-black dark:text-white'
+          onClick={() => handleFormat("backend")}
+        >
+          Back-end projects
+        </button>
+      </div>
       <div className='grid gap-6 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 md:gap-8 place-items-center'>
-        {Projects.map((project) => (
+        {filteredProjects.map((project) => (
           <div
             key={project.id}
             className='bg-gray-800 w-[350px] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 ease-in-out text-white'
@@ -31,7 +60,7 @@ const Project = () => {
                 {project.name}
               </h3>
               <p>{project.desc}</p>
-              <h4 className='text-lg font-semibold mb-2'>Stack</h4>
+              <h4 className='text-lg font-semibold mt-2 mb-2'>Stack</h4>
               <div className='flex space-x-2 mb-4'>
                 {project.tag.map((tag, index) => (
                   <p key={index} className='text-gray-400'>
